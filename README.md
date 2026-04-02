@@ -12,7 +12,7 @@ The current version has been customized with:
 - A basic in-app `Settings` window
 - `conf.ini`-based configuration for advanced control
 
-![POPAlarm demo](pic.gif)
+![POPAlarm screenshot](assets/popalarm-screenshot.png)
 
 ## Features
 
