@@ -2,9 +2,11 @@
 
 [![License](https://img.shields.io/badge/license-MIT-red.svg)](LICENSE)
 
-POPAlarm is a lightweight desktop reminder clock built with Rust. It runs as a tray-based application, shows a compact popup clock on schedule, supports countdown reminders, and provides a simple settings window for common runtime options.
+POPAlarm is a lightweight desktop reminder app designed for focused work, break prompts, and time-based visual nudges. It runs quietly in the tray, appears with a compact metallic popup clock at scheduled times, and keeps configuration simple through a lightweight settings window and `conf.ini`.
 
-The current version has been customized with:
+Built for users who want a reminder utility that feels cleaner and more intentional than a generic timer, POPAlarm combines a low-friction desktop workflow with a visually distinct popup interface.
+
+The current version includes:
 
 - A metallic-style popup interface
 - Tray integration
@@ -13,6 +15,32 @@ The current version has been customized with:
 - `conf.ini`-based configuration for advanced control
 
 ![POPAlarm screenshot](assets/popalarm-screenshot.png)
+
+## Download / Install
+
+### macOS
+
+If you are using a packaged build, open the installer disk image and drag the app into `Applications`:
+
+- `POPAlarm-Installer-Styled-macOS.dmg`
+
+If you already have the app bundle locally, you can also run it directly:
+
+- `POPAlarm.app`
+
+### Build from Source
+
+To build the project locally:
+
+```bash
+cargo build --release
+```
+
+The compiled executable will be generated at:
+
+```bash
+target/release/popalarm
+```
 
 ## Features
 
@@ -47,31 +75,10 @@ POPAlarm is built with the following Rust libraries:
 
 ## Installation
 
-### macOS
-
-You can launch the app directly from:
-
-```bash
-POPAlarm.app
-```
-
-For distribution, the repository may also include DMG packages generated from the app bundle.
-
-### Build from Source
-
 1. Install Rust using [rustup](https://rustup.rs/).
 2. Clone this repository.
-3. Build the release version:
-
-```bash
-cargo build --release
-```
-
-The compiled executable will be generated at:
-
-```bash
-target/release/popalarm
-```
+3. Build the release version with `cargo build --release`.
+4. Launch the app from the generated binary or packaged app bundle.
 
 ## Running the Application
 
