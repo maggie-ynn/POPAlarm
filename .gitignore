@@ -1,0 +1,6 @@
+/target
+.vscode
+*.jpeg
+.DS_Store
+*.dmg
+*.app
